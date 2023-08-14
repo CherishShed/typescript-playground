@@ -1,0 +1,11 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var myArray;
+myArray = "shedi";
+console.log(myArray);
+myArray = true;
+console.log(myArray);
+myArray = 9;
+console.log(myArray);
+myArray = 10;
+console.log(myArray);
