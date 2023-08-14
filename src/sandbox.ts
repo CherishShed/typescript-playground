@@ -14,3 +14,4 @@ console.log(myArray);
 let anyArray:any[] = [];
 
 anyArray.push("shedi");
+console.log(anyArray)
