@@ -1,9 +1,13 @@
-const println=(sentence:string, age?:number)=>{
-    console.log(`${sentence}, AND I AM ${age} YEARS OLD`);
-}
+const myForm = document.querySelector('form');
+const selectType = document.getElementById("type") as HTMLSelectElement;
+const from = document.getElementById("tofrom") as HTMLInputElement;
+const details = document.getElementById("details") as HTMLInputElement;
+const amount = document.getElementById("amount") as HTMLInputElement;
 
-const add = (num1:number, num2:number):number => {
-return (num1 + num2);
-}
-println("Shedi");
-console.log(add(20,21));
+    
+myForm?.addEventListener('submit', (event: any) => {
+    event.preventDefault();
+
+    console.log({from:from?.value,details:details?.value, amount:amount?.value, selectType:selectType?.value})
+    
+})
