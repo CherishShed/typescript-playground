@@ -1,17 +1,9 @@
-export{}
+const println=(sentence:string, age?:number)=>{
+    console.log(`${sentence}, AND I AM ${age} YEARS OLD`);
+}
 
-let myArray:any;
-
-myArray = "shedi"
-console.log(myArray)
-
-myArray = true
-console.log(myArray);
-
-myArray = 9
-console.log(myArray);
-
-let anyArray:any[] = [];
-
-anyArray.push("shedi");
-console.log(anyArray)
+const add = (num1:number, num2:number):number => {
+return (num1 + num2);
+}
+println("Shedi");
+console.log(add(20,21));

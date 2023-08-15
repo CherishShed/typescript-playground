@@ -1,12 +1,9 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-let myArray;
-myArray = "shedi";
-console.log(myArray);
-myArray = true;
-console.log(myArray);
-myArray = 9;
-console.log(myArray);
-let anyArray = [];
-anyArray.push("shedi");
-console.log(anyArray);
+const println = (sentence, age) => {
+    console.log(`${sentence}, AND I AM ${age} YEARS OLD`);
+};
+const add = (num1, num2) => {
+    return (num1 + num2);
+};
+println("Shedi");
+console.log(add(20, 21));
