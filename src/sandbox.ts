@@ -11,3 +11,31 @@ myForm?.addEventListener('submit', (event: any) => {
     console.log({from:from?.value,details:details?.value, amount:amount?.value, selectType:selectType?.value})
     
 })
+
+class Invoice{
+    client:string
+    details:string
+    amount:number
+    
+    constructor(client:string, details:string, amount:number){
+        this.client = client
+        this.details = details
+        this.amount = amount
+    }
+
+    format(){
+        return `This ${this.client} owes ${this.details} this amount: ${this.amount}`
+    }
+}
+
+class Payment{
+    receipient:string
+    details:string
+    amount:number
+    
+    constructor(receipient:string, details:string, amount:number){
+        this.receipient = receipient
+        this.details = details
+        this.amount = amount
+    }
+}
